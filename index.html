@@ -1,1 +1,104 @@
-Hello world
+<!DOCTYPE HTML>
+<html lang="en">
+   <head>
+       <title>BurgerShop</title>
+       <meta charset="utf-8"/>
+   </head>
+   
+   <body>
+     <header>
+      <h1>Välkommen till BurgerShop</h1>
+     </header>
+     <main>
+      <section>
+        <h2>Menu</h2>
+        <h4>Select burger</h4>
+          <div style="display: inline-block">
+            <h3>Just "Burger"</h3>
+            <img src="/img/JustBurger.webp" alt="JustBurger.webp" title="Hello beautiful, choose me" style="width: 200px">
+            <ul>
+              <li>Lactose-free</li>
+              <li>May contain traces of nuts</li>
+            </ul>
+          </div>
+          <div style="display: inline-block">
+            <h3>More Than Just "Burger"</h3>
+            <img src="/img/MoreThanJustBurger.jpg" alt="MoreThanJustBurger.jpg" title="Don't listen to just burger, chose me" style="width: 200px">
+            <ul>
+              <li>Contains Lactose</li>
+              <li>Contains Gluten</li>
+            </ul>
+          </div>
+          <div style="display: inline-block">
+            <h3>No "Burger"</h3>
+            <img src="/img/NoBurger.webp" alt="NoBurger.webp" title="Hi" style="width: 200px">
+            <ul>
+              <li>Gluten-free</li>
+              <li>Lactose-free</li>
+              <li>Vegetarian</li>
+              <li>Vegan</li>
+              <li>No onion</li>
+              <li>May contain traces of nuts</li>
+            </ul>
+          </div>
+      </section>
+      <section>
+        <h2>Customer information</h2>
+        <h3>Provide necessary information for your delivery</h3>
+        <p>
+          <label for="fullname">Full Name</label><br>
+          <input type="text" id="fullname" name="fn" required="required" placeholder="First- and Last name">
+        </p>
+        <p>
+          <label for="em">E-mail</label><br>
+          <input type="email" id="email" name="em" required="required" placeholder="E-mail address">
+        </p>
+        <p>
+          <label for="street">Street</label><br>
+          <input type="text" id="street" name="st" required="required" placeholder="Street Name">
+        </p>
+        <p>
+          <label for="house">House</label><br>
+          <input type="number" id="house" name="hs" required="required" placeholder="House Number">
+        </p>
+        <p>
+          <label for="payment">Payment options</label><br>
+          <select id="payment" name="po">
+            <option>Swish</option>
+            <option>Debit Card</option>
+            <option>Credit Card</option>
+            <option>Apple Pay</option>
+            <option>Klarna</option>
+          </select>
+        </p>
+        <p>
+          <label for="gender">Gender</label><br>
+          <div> 
+            <input type="radio" id="gender_female" name="rb" value="female" checked/>
+            <label for="gender">Female</label>
+          </div>
+          <div> 
+            <input type="radio" id="gender_male" name="rb" value="male"/>
+            <label for="gender">Male</label>
+          </div>
+          <div> 
+            <input type="radio" id="gender_nonbin" name="rb" value="nonbin"/>
+            <label for="gender">Non-binary</label>
+          </div>
+          <div> 
+            <input type="radio" id="gender_undis" name="rb" value="undis"/>
+            <label for="gender">Undisclosed</label>
+          </div>
+        </p>
+      </section>
+      <button type="submit">
+        <img src="/img/youdidit.jpg" alt="Send Order" style="width: 30px">
+        Send Order
+      </button>
+     </main>
+     <footer>
+       <hr>
+       <p>&copy; 2003 Fake Burgers AB</p>
+     </footer>
+   </body>
+</html>
