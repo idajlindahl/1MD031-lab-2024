@@ -1,48 +1,54 @@
 <!DOCTYPE HTML>
 <html lang="en">
-   <head>
+   <head >
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
        <title>BurgerShop</title>
        <meta charset="utf-8"/>
    </head>
    
    <body>
      <header>
-      <h1>Välkommen till BurgerShop</h1>
+      <div id="header-section">
+        <img src="/img/Burgershop.png" alt="Burgershop.png" id="header-img"/>
+        <h1 id="header-h1">Välkommen till BurgerShop</h1>
+      </div>
      </header>
      <main>
-      <section>
+      <section id="menu-section">
         <h2>Menu</h2>
         <h4>Select burger</h4>
-          <div style="display: inline-block">
-            <h3>Just "Burger"</h3>
-            <img src="/img/JustBurger.webp" alt="JustBurger.webp" title="Hello beautiful, choose me" style="width: 200px">
-            <ul>
-              <li>Lactose-free</li>
-              <li>May contain traces of nuts</li>
-            </ul>
-          </div>
-          <div style="display: inline-block">
-            <h3>More Than Just "Burger"</h3>
-            <img src="/img/MoreThanJustBurger.jpg" alt="MoreThanJustBurger.jpg" title="Don't listen to just burger, chose me" style="width: 200px">
-            <ul>
-              <li>Contains Lactose</li>
-              <li>Contains Gluten</li>
-            </ul>
-          </div>
-          <div style="display: inline-block">
-            <h3>No "Burger"</h3>
-            <img src="/img/NoBurger.webp" alt="NoBurger.webp" title="Hi" style="width: 200px">
-            <ul>
-              <li>Gluten-free</li>
-              <li>Lactose-free</li>
-              <li>Vegetarian</li>
-              <li>Vegan</li>
-              <li>No onion</li>
-              <li>May contain traces of nuts</li>
-            </ul>
+          <div class="burgeroptions">
+            <div class="burger just">
+              <h3>Just "Burger"</h3>
+              <img src="/img/JustBurger.webp" alt="JustBurger.webp" title="Hello beautiful, choose me" class="burgerimg just">
+              <ul>
+                <li>Lactose-free</li>
+                <li>May contain traces of nuts</li>
+              </ul>
+            </div>
+            <div class="burger morethanjust">
+              <h3>More Than Just "Burger"</h3>
+              <img src="/img/MoreThanJustBurger.jpg" alt="MoreThanJustBurger.jpg" title="Don't listen to just burger, chose me" class="burgerimg morethanjust">
+              <ul>
+                <li><span class="allergen">Lactose</span></li>
+                <li><span class="allergen">Gluten</span></li>
+              </ul>
+            </div>
+            <div class="burger no">
+              <h3>No "Burger"</h3>
+              <img src="/img/NoBurger.webp" alt="NoBurger.webp" title="Hi" class="burgerimg no">
+              <ul>
+                <li><span class="allergen">Lactose</span></li>
+                <li><span class="allergen">Gluten</span></li>
+                <li>Vegetarian</li>
+                <li>Vegan</li>
+                <li>No onion</li>
+                <li>May contain traces of nuts</li>
+              </ul>
+            </div>
           </div>
       </section>
-      <section>
+      <section id="orderinfo-section">
         <h2>Customer information</h2>
         <h3>Provide necessary information for your delivery</h3>
         <p>
@@ -91,7 +97,7 @@
           </div>
         </p>
       </section>
-      <button type="submit">
+      <button type="submit" id="submit-button">
         <img src="/img/youdidit.jpg" alt="Send Order" style="width: 30px">
         Send Order
       </button>

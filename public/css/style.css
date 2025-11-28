@@ -1,64 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@700&display=swap');
 body {
-    font-size: 12pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
 }
 
-p {
-    color: red;
+section {
+    margin: 10px 10px;
 }
 
-h1 {
-    font-family: 'Agbalumo';
-    font-size: 36pt;
-}
-main, header, footer, nav ul {
-    max-width: 40rem;
-    margin: 0 auto 0 auto;
-}
-main {
-    background-color: bisque;
-}
-
-/* nav ul li {
-    display: inline-block;
-    background-color: grey;
-    padding: 1em;
-    margin: 1em;
-} */
-
-header {
-    background-image: url("../img/polacks.jpg");
-    background-size: cover;
-    overflow: hidden;
-    width: 100%;
-    height: 200px;
-    opacity: 0.5;
-}
-
-header h1 {
-    width:40rem;
-    margin: 0 auto;
-    text-align: center;
-}
-
-nav ul {
+.burgeroptions {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 9.25em);
-    gap: 1em;
-    padding: 0;
+    grid-gap: 10px;
+    grid-template-columns: 33.33% 33.33% 33.33%;
 }
 
-nav li {
-    display: block;
-    background-color: grey;
-    padding: 1em;
+.burger {
+    margin: 20px;
+    padding: 10px;
+    background-color: darkred;
+    border-radius: 5px;
 }
 
-.Very-good {
-    color: green;
+.burgerimg {
+    width: 90%;
+    
 }
 
-.Master {
-    color: green;
+.allergen {
     font-weight: bold;
+} 
+
+#header-section {
+    margin: 10px 15px;
+    height: 200px;
+    overflow:hidden;
+    position: relative;
 }
+
+#header-img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+}
+
+#header-h1 {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    color: darkred;
+}
+
+
+#menu-section {
+    background-color: #000000;
+    color: #ffffff;
+    border: 5px dotted #ffffff;
+    padding: 5px 5px 5px 5px;
+}
+
+#menu-section h2,  
+#menu-section h4 {
+    grid-column: 1/-1;
+}
+
+#orderinfo-section {
+    border: 5px dotted #000000;
+    padding: 5px 5px 5px 20px;
+}
+
+#submit-button {
+    margin: 20px 0px 0px 15px;
+}
+
+button:hover {
+    background-color: #ff0000;
+    cursor: pointer;
+}
+
