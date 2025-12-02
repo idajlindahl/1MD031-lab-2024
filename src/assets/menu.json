@@ -1,21 +1,20 @@
 [{
-    "name": "Veggie Bliss", 
+    "name": "Just Burger", 
     "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "url": "/img/JustBurger.webp",
+    "allergens": ["Gluten", "Lactose"],
+    "ingredients": ["Nuts"]
 },
 {
-    "name": "Veggie Bliss", 
+    "name": "More Than Just Burger", 
     "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "url": "/img/MoreThanJustBurger.jpg",
+    "allergens": ["Gluten", "Lactose"],
+    "ingredients": ["Nuts"]
 },
 {
-    "name": "Veggie Bliss", 
+    "name": "No Burger", 
     "kCal": 500, 
-    "url": "https://images-bonnier.imgix.net/files/ifo/production/20220412084608/Kødfri-burger-1.jpg?auto=compress,format&w=1024%201024w",
-    "lactose": false, 
-    "gluten": false
+    "url": "/img/NoBurger.webp",
+    "ingredients": ["Nuts"]
 }]

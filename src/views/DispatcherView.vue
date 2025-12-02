@@ -2,7 +2,8 @@
     <div id="orders">
       <div id="orderList">
         <div v-for="(order, key) in orders" v-bind:key="'order'+key">
-          #{{ key }}: {{ order.orderItems.join(", ") }}
+          #{{ key }}: {{ makeToList(order.orderItems) }}:
+          <br>{{ order.details.fullName }}, {{ order.details.email }}, {{ order.details.payment }}, {{ order.details.gender }}</br>
         </div>
         <button v-on:click="clearQueue">Clear Queue</button>
       </div>
@@ -21,12 +22,17 @@
     name: 'DispatcherView',
     data: function () {
       return {
-        orders: null,
+        orders: {},
       }
     },
     created: function () {
       socket.on('currentQueue', data =>
         this.orders = data.orders);
+
+      socket.on('addOrder', (order) => {
+        this.$set(this.orders, order.orderId, order);
+      })
+
     },
     methods: {
       clearQueue: function () {
@@ -34,7 +40,15 @@
       },
       changeStatus: function(orderId) {
         socket.emit('changeStatus', {orderId: orderId, status: "Annan status"});
-
+      },
+      makeToList: function(itemsObject) {
+        let itemsArray = [];
+        for (const [name, amount] of Object.entries(itemsObject)) {
+          if (amount > 0) {
+            itemsArray.push(`${amount} x ${name}`);
+          }
+        }
+        return itemsArray.join(", ");
       }
     }
   }
